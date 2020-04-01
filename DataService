@@ -1,0 +1,28 @@
+package com.kaviddiss;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+
+
+@Service
+public class DataService {
+	private DataRepository dataRepository;
+
+    public DataService(DataRepository dataRepository) {
+        this.dataRepository = dataRepository;
+    }
+
+    public Iterable<Dato> list() {
+        return dataRepository.findAll();
+    }
+
+    public Dato save(Dato dato) {
+        return dataRepository.save(dato);
+    }
+
+    public void save(List<Dato> dati) {
+        dataRepository.saveAll(dati);
+    }
+}
