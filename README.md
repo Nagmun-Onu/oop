@@ -62,7 +62,7 @@ All'avvio, scarica il dataset, effettua il parsing del file JSON e crea gli ogge
  
  ## Proviamo a cancellare un dato che non esiste-> per esempio: il dato con id=100
  ###### /GET/data/delete/100
- ![Alt_text](delete4.PNG]
+ ![Alt_text](delete4.PNG)
  
  ## Come ultima test, proviamo a cancellare un dato che è stato cancellato precedentemente-> per esempio: il dato con id=5
  ###### /GET/data/delete/5
