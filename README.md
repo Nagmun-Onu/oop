@@ -15,6 +15,15 @@ Ogni riga del file contiene:
 
 # Modellazione
 Ogni riga del dataset è rappresentata da una istanza della classe Dato che contiene gli attributi elencati nel paragrafo precedente.
-Nello specifico è il seguente:
+Il dataset contiene anche alcuni elementi che non sono stati resi disponibili, tali elementi verranno perciò considerati come "NULL". Esempio di una istanza di Dato:
 
 ![Alt_text](MODELLAZIONE.PNG)
+
+# Funzionalità
+All'avvio, scarica il dataset, effettua il parsing del file JSON e crea gli oggetti, successivamente resta in attesa di richieste dell'utente. Utilizzando il framework Spring Boot è in grado di gestire e rispondere a richieste effettuate sul "localhost:8080" (Apache TomCat Web Server) dal browser o da qualsiasi simulatore di chiamate. I dati restituiti sono in formato "JSON" e rappresentano oggetti del dataset. È possibile chiedere anche la restituzione delle statistiche sui dati (formato JSON) che specificando l'attributo sul quale effettuare la computazione (colonna dei dati) quali:
+- Numeri: 
+          - avg, min, max, dev std, sum, count
+- Stringhe:
+          - Conteggio elementi unici (per ogni elemento unico indicando il numero di occorrenze)
+          
+ Su richiesta è possibile visualizzare tutti i dati, i metadati e cancellare anche un elemento fornendo l'identificatore numerico del    dato da cancellare.
