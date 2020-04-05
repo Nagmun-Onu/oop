@@ -30,6 +30,74 @@ All'avvio, scarica il dataset, effettua il parsing del file JSON e crea gli ogge
  
  # Path disponibili
  - # /GET/metadata
- ![Alt_text](metadata.png)
+ ![Alt_text](metadata.PNG)
+ 
+ ##### -----------------------------------------------------------------------------------------------------
+ - # /GET/data
+ ![Alt_text](dati.PNG)
+ ....
+ .....
+ ........
+##### continuano i dati 
+ 
+ 
+ ![Alt_text](dati1.PNG)
+ ##### -----------------------------------------------------------------------------------------------------
+ 
+ - # /GET/data/delete/{id}
+ ## Prima di cancellare il dato
+ ![Alt_text](dati.PNG)
+ ## Proviamo a cancellare il dato con id=1
+ ##### /GET/data/delete/1
+ id=1 -> il dato esiste quindi viene cancellato e comunicato tramite il messaggio
+ ![Alt_text](delete1.PNG)
+ ##### Controlliamo se il dato con id=1 è stato cancellato o no
+ ![Alt_text](delete2.PNG)
+ ##### Infatti il dato con id=1 non esiste più
+ 
+ Riproviamo con un'altro id. Scegliamo id=5
+ ###### /GET/data/delete/5
+ Controlliamo se è stato cancellato o no, infatti il dato con id=5 non esiste più:
+ ![Alt_text](delete3.PNG)
+ 
+ ## Proviamo a cancellare un dato che non esiste-> per esempio: il dato con id=100
+ ###### /GET/data/delete/100
+ ![Alt_text](delete4.PNG]
+ 
+ ## Come ultima test, proviamo a cancellare un dato che è stato cancellato precedentemente-> per esempio: il dato con id=5
+ ###### /GET/data/delete/5
+ ![Alt_text](delete5.PNG)
+ 
+ ##### -----------------------------------------------------------------------------------------
+ 
+ -  # GET/stats/{attributo}
+ ![Alt_text](id.PNG)
+ 
+ 
+ ![Alt_text](comune.PNG)
+ 
+ 
+ ![Alt_text](access_point1.PNG)
+ ##### vediamo il formato dei dati con lo zoom
+ ![Alt_text](access_point2.PNG)
+ 
+ 
+ ![Alt_text](ap_interno.PNG)
+ 
+ 
+ ![Alt_text](ap_esterno.PNG)
+ 
+ 
+ ![Alt_text](lat.PNG)
+ 
+ 
+ ![Alt_text](long.PNG)
+ 
+ ## Proviamo ad inserire un nome del attributo inesistente-> per esempio: città
+ ![Alt_text](wrongcampo.PNG)
+ 
+ 
+ 
+ 
  
  
