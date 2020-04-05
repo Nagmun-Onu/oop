@@ -16,4 +16,5 @@ Ogni riga del file contiene:
 # Modellazione
 Ogni riga del dataset è rappresentata da una istanza della classe Dato che contiene gli attributi elencati nel paragrafo precedente.
 Nello specifico è il seguente:
-![Screenshot](MODELLAZIONE.png)
+
+![Alt_text](MODELLAZIONE.PNG)
