@@ -30,4 +30,6 @@ All'avvio, scarica il dataset, effettua il parsing del file JSON e crea gli ogge
  
  # Path disponibili
  - # /GET/metadata
+ ![Alt_text](metadata.png)
+ 
  
