@@ -14,3 +14,6 @@ Ogni riga del file contiene:
 - Longitudine della localizzazione (indicata con "LON");
 
 # Modellazione
+Ogni riga del dataset è rappresentata da una istanza della classe Dato che contiene gli attributi elencati nel paragrafo precedente.
+Nello specifico è il seguente:
+
