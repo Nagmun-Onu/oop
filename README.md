@@ -70,6 +70,11 @@ All'avvio, scarica il dataset, effettua il parsing del file JSON e crea gli ogge
  
  ##### -----------------------------------------------------------------------------------------
  
+ ### Path per le statistiche sui dati
+ - ####### Attributi numerici: "id", "ap_interno", "ap_esterno", "lat" e "long"
+ - ####### Attributi stringhe: "comune" e "access_point"
+ 
+ 
  -  # GET/stats/{attributo}
  ![Alt_text](id.PNG)
  
