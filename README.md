@@ -71,26 +71,26 @@ All'avvio, scarica il dataset, effettua il parsing del file JSON e crea gli ogge
  ##### Infatti il dato con id=1 non esiste più
  
  Riproviamo con un'altro id. Scegliamo id=5
- ####### /GET/data/delete/5
+ ###### /GET/data/delete/5
  Controlliamo se è stato cancellato o no, infatti il dato con id=5 non esiste più:
  ![Alt_text](delete3.PNG)
  
  ## Proviamo a cancellare un dato che non esiste-> per esempio: il dato con id=100
- ####### /GET/data/delete/100
+ ###### /GET/data/delete/100
  ![Alt_text](delete4.PNG)
  
  ## Come ultima test, proviamo a cancellare un dato che è stato cancellato precedentemente-> per esempio: il dato con id=5
- ####### /GET/data/delete/5
+ ###### /GET/data/delete/5
  ![Alt_text](delete5.PNG)
  
  ##### -----------------------------------------------------------------------------------------
  
  ##### Esempi di funzionamento per le statistiche sui dati
- - ####### Attributi numerici: "id", "ap_interno", "ap_esterno", "lat" e "long"
- - ####### Attributi stringhe: "comune" e "access_point"
+ - ###### Attributi numerici: "id", "ap_interno", "ap_esterno", "lat" e "long"
+ - ###### Attributi stringhe: "comune" e "access_point"
  
  
- -  ####### GET/stats/{attributo}
+ -  ###### GET/stats/{attributo}
  ![Alt_text](id.PNG)
  
  
