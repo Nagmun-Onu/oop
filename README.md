@@ -27,3 +27,7 @@ All'avvio, scarica il dataset, effettua il parsing del file JSON e crea gli ogge
           - Conteggio elementi unici (per ogni elemento unico indicando il numero di occorrenze)
           
  Su richiesta è possibile visualizzare tutti i dati, i metadati e cancellare anche un elemento fornendo l'identificatore numerico del    dato da cancellare.
+ 
+ # Path disponibili
+ - # /GET/metadata
+ 
