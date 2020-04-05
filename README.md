@@ -29,26 +29,26 @@ All'avvio, scarica il dataset, effettua il parsing del file JSON e crea gli ogge
  Su richiesta è possibile visualizzare tutti i dati, i metadati e cancellare anche un elemento fornendo l'identificatore numerico del    dato da cancellare.
  
  # Path disponibili
- - ####### /GET/metadata
+ - ###### /GET/metadata
  Restituisce i metadati (formato JSON) ovvero elenco degli attributi e del tipo
  
- - ####### /GET/data
+ - ###### /GET/data
  Restituisce tutti i dati (formato JSON)
  
- - ####### /GET/data/delete/{id}
+ - ###### /GET/data/delete/{id}
  Cancella un elemento fornendo l'identificatore numerico del dato
  
- - ####### /GET/stats/{attributo}
+ - ###### /GET/stats/{attributo}
  Restituisce statistiche sui dati (formato JSON)  che specificando l'attributo sul quale effettuare la computazione (colonna dei dati) quali:
  - NUMERI: avg, min, max, dev std, sum e count
  - Stringhe: Conteggio elementi unici (per ogni elemento unico indicare il numero di occorrenze)
  
  # Esempi di funzionamento
- - ####### /GET/metadata
+ - ###### /GET/metadata
  ![Alt_text](metadata.PNG)
  
  ##### -----------------------------------------------------------------------------------------------------
- - ####### /GET/data
+ - ###### /GET/data
  ![Alt_text](dati.PNG)
  ....
  .....
@@ -59,11 +59,11 @@ All'avvio, scarica il dataset, effettua il parsing del file JSON e crea gli ogge
  ![Alt_text](dati1.PNG)
  ##### -----------------------------------------------------------------------------------------------------
  
- - ####### /GET/data/delete/{id}
+ - ###### /GET/data/delete/{id}
  ## Prima di cancellare il dato
  ![Alt_text](dati.PNG)
  ## Proviamo a cancellare il dato con id=1
- ####### /GET/data/delete/1
+ ###### /GET/data/delete/1
  id=1 -> il dato esiste quindi viene cancellato e comunicato tramite il messaggio
  ![Alt_text](delete1.PNG)
  ##### Controlliamo se il dato con id=1 è stato cancellato o no
