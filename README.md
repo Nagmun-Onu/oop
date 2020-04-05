@@ -117,7 +117,11 @@ All'avvio, scarica il dataset, effettua il parsing del file JSON e crea gli ogge
  ![Alt_text](wrongcampo.PNG)
  
  # UML
+ ## User Diagram
+ ![Alt_text](User_diagram.PNG)
  
+ ## Activity Diagram
+ ![Alt_text](activity_diagram)
  
  
  
